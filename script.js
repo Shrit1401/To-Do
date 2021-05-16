@@ -90,12 +90,11 @@ function showTask(){
 }
 
 function deleteTask(index){
-    // let getLocalStorage = localStorage.getItem("New Todo");
-    // listarr = JSON.parse(getLocalStorage);
-    // listarr.splice(index, 1)
-    // localStorage.setItem("New Todo", JSON.stringify(listarr))
-    // showTask();
-    document.querySelector("ul li").classList.add("line");
+     let getLocalStorage = localStorage.getItem("New Todo");
+     listarr = JSON.parse(getLocalStorage);
+     listarr.splice(index, 1)
+     localStorage.setItem("New Todo", JSON.stringify(listarr))
+     showTask();
 }
 
 deleteBtn.onclick = ()=>{
